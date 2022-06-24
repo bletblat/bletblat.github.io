@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Birdwatching</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css?ver=1">
-    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-    <title>Выпадающее меню</title>
-</head>
-<body>
-    <h1>Вкусно поесть</h1>
-    <img src="./img/ratatuy.jpg" alt="Мышь-рататуй-между-ножей" width="500px">
-    <p>Вот такие вот дела</p>
-    <ol>
-        <li>Цуккини - 1 шт.</li>
-        <li>Кабачок - 1 шт.</li>
-        <li>Баклажан - 1 шт.</li>
-        <li>Помидор - 3-4 шт.</li>
-        <li>Масло оливковое - 2 ст. л.</li>
-        <li>Чеснок</li>
-        <li>Тимьян</li>
-        <li>Соль - по вкусу</li>
-        <li>Перец - по вкусу</li>
-    </ol>
-    <a target="_blank" href="https://www.russianfood.com/recipes/recipe.php?rid=143466">Рецепт</a>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css?ver=2">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Игра в угадывание чисел</h1>
+    <p>Мы выбрали случайное число от 1 до 100. Посмотрите, сможете ли вы угадать его за 10 ходов или меньше. Мы сообщим вам, была ли ваша догадка слишком высокой или слишком низкой.</p>
+    <div class="form">
+      <label for="guessField">Введи предложение</label>
+      <input type="text" id="guessField" class="guessField">
+      <input type="submit" value="Отправить" class="guessSubmit">
+    </div>
     
-    <script src="./js/main.js"></script>
-</body>
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
 
+    <script src="./js/main.js?ver=1"></script>
+  </body>
 </html>
