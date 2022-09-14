@@ -731,6 +731,177 @@ body {
   padding: 0 14.5px;
 }
 
+.no-webp .baner{
+  background-image: url("../img/baner-bg.jpg"); }
+
+.baner {
+  padding: 172px 0 156px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.baner__body {
+  max-width: 540px;
+}
+
+.baner__title {
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80/60;
+  color: #363838;
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+}
+
+.baner__title::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #6D7278;
+  left: 0;
+  bottom: 0;
+  width: 35%;
+}
+
+.baner__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28/16;
+  color: #5A5A5A;
+}
+
+.timeline {
+  padding: 79px 0 90px 0;
+}
+
+.timeline__title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51/36;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timeline__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+}
+
+.timeline__item {
+  padding-bottom: 19px;
+  padding-right: 30px;
+}
+
+.timeline__item_1 {
+  border-bottom: 2px solid rgba(54, 56, 56, 0.7);
+  position: relative;
+}
+
+.timeline__item_1::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  bottom: -6px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #363838;
+}
+
+.timeline__item_2 {
+  border-bottom: 2px solid rgba(54, 56, 56, 0.7);
+}
+
+.timeline__item_2 div {
+  opacity: 0;
+}
+
+.timeline__item_3 {
+  border-bottom: 2px solid rgba(54, 56, 56, 0.7);
+  position: relative;
+}
+
+.timeline__item_3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 2px;
+  background-color: rgba(54, 56, 56, 0.7);
+}
+
+.timeline__item_4 {
+  border-bottom: 2px solid rgba(54, 56, 56, 0.7);
+}
+
+.timeline__item_4 div {
+  opacity: 0;
+}
+
+.timeline__item_5 {
+  opacity: 0;
+}
+
+.timeline__item_6 {
+  padding-top: 60px;
+  position: relative;
+}
+
+.timeline__item_6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 2px;
+  background-color: rgba(54, 56, 56, 0.7);
+}
+
+.timeline__item_7 {
+  opacity: 0;
+}
+
+.timeline__item_8 {
+  display: none;
+}
+
+.timeline__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23/16;
+  padding-bottom: 14px;
+}
+
+.timeline__item-title::before {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+.timeline__item-text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27/16;
+  color: #5A5A5A;
+}
+
 .element {
   padding: 0 5px;
 }
@@ -977,6 +1148,17 @@ body {
   }
 }
 
+@media (max-width: 1160px) {
+  .timeline__body {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .timeline__item_4 {
+    display: none;
+  }
+}
+
 @media (max-width: 1098px) {
   .top__slider-content {
     margin-top: 5%;
@@ -1103,6 +1285,53 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .timeline__body {
+    display: block;
+  }
+
+  .timeline__item {
+    padding: 0 0 25px 0;
+  }
+
+  .timeline__item_1 {
+    border-bottom: none;
+  }
+
+  .timeline__item_1::after {
+    background-color: transparent;
+  }
+
+  .timeline__item_2 {
+    display: none;
+  }
+
+  .timeline__item_3 {
+    border-bottom: none;
+  }
+
+  .timeline__item_3::before {
+    background-color: transparent;
+  }
+
+  .timeline__item_5 {
+    display: none;
+  }
+
+  .timeline__item_6 {
+    border-bottom: none;
+    padding-top: 0;
+  }
+
+  .timeline__item_6::before {
+    background-color: transparent;
+  }
+
+  .timeline__item_7 {
+    display: none;
+  }
+}
+
 @media (max-width: 628px) {
   .top {
     background-size: auto;
@@ -1158,6 +1387,23 @@ body {
 }
 
 @media (max-width: 600px) {
+  .baner {
+    padding: 130px 0 120px 0;
+  }
+
+  .baner__body {
+    text-align: center;
+  }
+
+  .baner__title {
+    font-size: 45px;
+  }
+
+  .baner__title::after {
+    right: 0;
+    margin: 0 auto;
+  }
+
   .footer__info {
     text-align: center;
   }
@@ -1193,3 +1439,5 @@ body {
 }
 
 .webp .top{ background-image: url(../img/top-slider/topSliderBg.webp); }
+
+.webp .baner{ background-image: url(../img/baner-bg.webp); }
