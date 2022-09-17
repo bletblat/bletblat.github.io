@@ -961,7 +961,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.gallery__tabs-image:hover {
+.gallery__tabs-image:not(.viewImg):hover {
   position: relative;
   -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
@@ -1204,6 +1204,23 @@ body {
   display: inline-flex;
   font-size: 16px;
   min-width: 35px;
+}
+
+.viewImg {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  padding: 50px 15px;
+}
+
+.viewImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 1565px) {
